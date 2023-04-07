@@ -1,6 +1,9 @@
 import { Divisor } from "../../components/Divisor/Divisor";
 import { Header } from "../../components/Header/Header";
 import { Tweet } from "../../components/Tweet/Tweet";
+import "./Timeline.css"
+
+import TextAreaAutoSize from "react-textarea-autosize";
 
 const tweets = [
   "Meu primeiro tweet",
@@ -17,7 +20,7 @@ export function Timeline() {
         <label htmlFor="tweet">
           <img src="https://github.com/braiancalot.png" alt="Braian Calot" />
 
-          <textarea id="tweet" placeholder="What's happening?" />
+          <TextAreaAutoSize id="tweet" placeholder="What's happening?" />
         </label>
 
         <button type="submit">Tweet</button>
