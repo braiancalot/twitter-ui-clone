@@ -14,11 +14,19 @@
 .sidebar .new-tweet {
   background-color: var(--twitter-blue);
   border: 0;
-  padding: 1rem 0;
+  padding: 1rem;
   border-radius: 9999px;
+  font-size: 1.25rem;
+  width: 100%;
   font-size: 1.25rem;
   font-weight: 700;
   color: white;
+}
+
+.sidebar .new-tweet svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
 }
 
 .sidebar .new-tweet:hover {
@@ -49,3 +57,22 @@
   width: 2rem;
   height: 2rem;
 }
+
+@media (max-width: 780px) {
+  .sidebar {
+    padding: 1.5rem 0.75rem;
+    align-items: center;
+  }
+
+  .sidebar .new-tweet svg {
+    display: block;
+  }
+
+  .sidebar .new-tweet span {
+    display: none;
+  }
+  
+  .main-navigation a span {
+    display: none;
+  }
+} 

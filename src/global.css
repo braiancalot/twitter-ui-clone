@@ -24,18 +24,3 @@ body, input, textarea, button {
 a {
   color: inherit;
 }
-
-/** Page: Timeline **/
-
-.layout {
-  max-width: 1100px;
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: 300px 1fr;
-}
-
-.content {
-  border-left: 1px solid #ebeef0;
-  border-right: 1px solid #ebeef0;
-}
